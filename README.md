@@ -38,5 +38,7 @@ Original Image ![image](https://user-images.githubusercontent.com/26203136/16471
 Ground Truth ![image](https://user-images.githubusercontent.com/26203136/164710920-bc81af07-ff7e-4211-a2f5-2a9e811d0b9f.png)  
 Segmented Image (160,160) ![image](https://user-images.githubusercontent.com/26203136/164710946-8ed236a2-7ef2-417c-b2b6-f8b7dae2a507.png)  
 
+Reference
+U-Net: Convolutional Networks for Biomedical Image Segmentation [https://arxiv.org/abs/1505.04597] 
 
 
