@@ -4,8 +4,10 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.preprocessing.image import load_img
 import PIL
+from PIL import ImageOps
+import numpy as np
 import random
-from utils import OxfordPets, display_mask
+from utils import OxfordPets
 from network_arch import U_Net
 
 input_shape = (160, 160, 3)
@@ -79,7 +81,7 @@ val_preds = model.predict(val_gen)
 
 
 # Display results for validation image #10
-i = 10
+i = 1
 
 # Display input image
 display(Image(filename=val_input_img_paths[i]))
@@ -87,6 +89,12 @@ display(Image(filename=val_input_img_paths[i]))
 # Display ground-truth target mask
 img = PIL.ImageOps.autocontrast(load_img(val_target_img_paths[i]))
 display(img)
+
+def display_mask(i):
+    mask = np.argmax(val_preds[i], axis=-1)
+    mask = np.expand_dims(mask, axis=-1)
+    img = ImageOps.autocontrast(keras.preprocessing.image.array_to_img(mask))
+    display(img)
 
 # Display mask predicted by our model
 display_mask(i)  # Note that the model only sees inputs at 150x150.

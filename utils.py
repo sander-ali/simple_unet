@@ -1,8 +1,8 @@
 from tensorflow import keras
 import numpy as np
 from tensorflow.keras.preprocessing.image import load_img
-from PIL import ImageOps
-from IPython.display import display
+
+
 
 class OxfordPets(keras.utils.Sequence):
 
@@ -31,9 +31,3 @@ class OxfordPets(keras.utils.Sequence):
             # Ground truth labels are 1, 2, 3. Subtract one to make them 0, 1, 2:
             y[j] -= 1
         return x, y
-
-def display_mask(i):
-    mask = np.argmax(val_preds[i], axis=-1)
-    mask = np.expand_dims(mask, axis=-1)
-    img = ImageOps.autocontrast(keras.preprocessing.image.array_to_img(mask))
-    display(img)
