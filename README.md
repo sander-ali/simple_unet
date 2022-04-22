@@ -30,13 +30,13 @@ python train_u_net_simple.py
 to train the network. Once the network is trained, the later half of the code will let you visualize the predictions on the validation set. 
 
 Experimental Results  
-Original Image ![image](https://user-images.githubusercontent.com/26203136/164710745-6c47fb97-1dd8-4306-846b-6823536bef67.png)
-Ground Truth ![image](https://user-images.githubusercontent.com/26203136/164710771-7666fb0d-2d2e-457d-b0d6-85a3986c36a6.png)
-Segmented Image (160,160) ![image](https://user-images.githubusercontent.com/26203136/164710793-7b0d0612-1397-4d1c-87fb-492002bb0a93.png)
+Original Image ![image](https://user-images.githubusercontent.com/26203136/164710745-6c47fb97-1dd8-4306-846b-6823536bef67.png)  
+Ground Truth ![image](https://user-images.githubusercontent.com/26203136/164710771-7666fb0d-2d2e-457d-b0d6-85a3986c36a6.png)  
+Segmented Image (160,160) ![image](https://user-images.githubusercontent.com/26203136/164710793-7b0d0612-1397-4d1c-87fb-492002bb0a93.png)  
 
-Original Image ![image](https://user-images.githubusercontent.com/26203136/164710893-2885c078-ec28-4705-b9a2-296027a886f3.png)
-Ground Truth ![image](https://user-images.githubusercontent.com/26203136/164710920-bc81af07-ff7e-4211-a2f5-2a9e811d0b9f.png)
-Segmented Image (160,160) ![image](https://user-images.githubusercontent.com/26203136/164710946-8ed236a2-7ef2-417c-b2b6-f8b7dae2a507.png)
+Original Image ![image](https://user-images.githubusercontent.com/26203136/164710893-2885c078-ec28-4705-b9a2-296027a886f3.png)  
+Ground Truth ![image](https://user-images.githubusercontent.com/26203136/164710920-bc81af07-ff7e-4211-a2f5-2a9e811d0b9f.png)  
+Segmented Image (160,160) ![image](https://user-images.githubusercontent.com/26203136/164710946-8ed236a2-7ef2-417c-b2b6-f8b7dae2a507.png)  
 
 
 
